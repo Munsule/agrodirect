@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "listings": {
+      "title": "Listing",
+      "description": "Produce crop listings published by farmers",
+      "properties": {
+        "id": { "type": "string" },
+        "farmerId": { "type": "string" },
+        "farmerName": { "type": "string" },
+        "farmerPhone": { "type": "string" },
+        "farmerLocation": { "type": "string" },
+        "farmName": { "type": "string" },
+        "farmerAvatar": { "type": "string" },
+        "farmerRating": { "type": "number" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "number" },
+        "unit": { "type": "string" },
+        "quantity": { "type": "string" },
+        "location": { "type": "string" },
+        "coordinates": { "type": "object" },
+        "description": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "harvestDate": { "type": "string" },
+        "farmingMethod": { "type": "string" },
+        "deliveryAvailable": { "type": "boolean" },
+        "minOrder": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "farmerId", "title", "price", "category", "unit", "quantity", "location", "imageUrl", "status"]
+    },
+    "users": {
+      "title": "User",
+      "description": "Farmers and buyers accounts",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "role": { "type": "string" },
+        "location": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "farmName": { "type": "string" },
+        "verified": { "type": "boolean" },
+        "rating": { "type": "number" },
+        "totalSales": { "type": "number" }
+      },
+      "required": ["id", "name", "phone", "role"]
+    }
+  },
+  "firestore": {
+    "collections": {
+      "listings": {
+        "entity": "listings",
+        "schema": "listings",
+        "description": "Collection of all produce listings"
+      },
+      "users": {
+        "entity": "users",
+        "schema": "users",
+        "description": "Collection of all registered users"
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+import { User, Listing } from '../types';
+
+export const INITIAL_USERS: User[] = [
+  {
+    id: 'farmer-1',
+    name: 'Amara Okafor',
+    farmName: 'SunHarvest Agro & Organic Hub',
+    phone: '+2348031234567',
+    role: 'farmer',
+    location: 'Ibadan, Oyo State, Nigeria',
+    coordinates: { lat: 7.3775, lng: 3.9470 },
+    avatarUrl: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=150&auto=format&fit=crop&q=80',
+    verified: true,
+    rating: 4.9,
+    totalSales: 142,
+  },
+  {
+    id: 'farmer-2',
+    name: 'Malam Ibrahim Danjuma',
+    farmName: 'Arewa Grain & Tuber Silos',
+    phone: '+2348029876543',
+    role: 'farmer',
+    location: 'Dawanau, Kano State, Nigeria',
+    coordinates: { lat: 12.0022, lng: 8.5920 },
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    verified: true,
+    rating: 4.9,
+    totalSales: 218,
+  },
+  {
+    id: 'farmer-3',
+    name: 'Terna Akor',
+    farmName: 'Benue Food Basket Co-op',
+    phone: '+2348135557890',
+    role: 'farmer',
+    location: 'Gboko, Benue State, Nigeria',
+    coordinates: { lat: 7.3167, lng: 9.0000 },
+    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+    verified: true,
+    rating: 5.0,
+    totalSales: 310,
+  },
+  {
+    id: 'farmer-4',
+    name: 'Chidubem Eze',
+    farmName: 'Plateau Highland Farms',
+    phone: '+2348091122334',
+    role: 'farmer',
+    location: 'Jos, Plateau State, Nigeria',
+    coordinates: { lat: 9.8965, lng: 8.8583 },
+    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    verified: true,
+    rating: 4.8,
+    totalSales: 175,
+  },
+  {
+    id: 'buyer-1',
+    name: 'Babajide Adeleke',
+    phone: '+2348054433221',
+    role: 'buyer',
+    location: 'Mile 12 Produce Market, Lagos',
+    coordinates: { lat: 6.6018, lng: 3.3958 },
+    avatarUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80',
+    verified: true,
+  },
+];
+
+export const INITIAL_LISTINGS: Listing[] = [];
+
+export const CATEGORY_PRESETS = [
+  { name: 'All Categories', icon: 'Sparkles', value: '' },
+  { name: 'Vegetables', icon: 'Carrot', value: 'Vegetables' },
+  { name: 'Tubers & Roots', icon: 'Apple', value: 'Tubers & Roots' },
+  { name: 'Grains & Cereals', icon: 'Wheat', value: 'Grains & Cereals' },
+  { name: 'Fruits', icon: 'Citrus', value: 'Fruits' },
+  { name: 'Legumes & Pulses', icon: 'Nut', value: 'Legumes & Pulses' },
+  { name: 'Herbs & Spices', icon: 'Flame', value: 'Herbs & Spices' },
+];

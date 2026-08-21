@@ -1,0 +1,10 @@
+{
+  "name": "Produce Marketplace",
+  "description": "A streamlined produce marketplace connecting farmers directly with buyers with lightweight farmer/buyer authentication, offline-first remote farm listing with automatic cloud synchronization to Firestore, interactive farm hub radar, Naira (₦) pricing, and click-to-WhatsApp/call ordering.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
